@@ -1,0 +1,140 @@
+html {
+    background-image: url(../image/background\ 1.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    width: 1366px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    margin-top: 51px;
+    margin-bottom: 17px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    gap: 8px;
+}
+
+.logo-img {
+    width: 53px;
+    height: 47px;
+    background-image: url(../image/logo\ 3.png);
+}
+
+.logo:hover .logo-img {
+    background-image: url(../image/logo\ 2.png);
+}
+
+.logo:hover {
+    color: #F26522;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-text :first-child {
+    font-size: 29px;
+    line-height: 29px;
+}
+
+.logo-text:last-child {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 19px;
+    margin-top: 46px;
+}
+
+.header-info a {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.header-info:hover a {
+    color: #F26522;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 19px;
+    grid-row-gap: 19px;
+    margin-bottom: 49px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 18px;
+    position: relative;
+}
+
+.bar-info {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background-color: #F26522;
+    height: 55px;
+    width: 100%;
+    top: 268px;
+    padding: 0 16px;
+}
+
+.bar-info h1 {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.item:hover span {
+    color: #F26522;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.bar-info::before {
+    position: absolute;
+    content: "from";
+    font-size: 10px;
+    line-height: 10px;
+    bottom: 40px;
+    left: 16px;
+}
